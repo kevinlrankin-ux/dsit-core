@@ -1,0 +1,18 @@
+video_lip_sync_drift:
+  meaning: "Timing mismatch between speech sounds and mouth motion."
+  caveats:
+    - "Dubbed audio or ADR can look similar."
+    - "Broadcast latency can introduce drift."
+video_temporal_jitter:
+  meaning: "Frame-to-frame instability in the face region."
+  caveats:
+    - "Stabilization artifacts can look similar."
+    - "Rolling shutter and motion blur can increase jitter."
+audio_vocoder_artifacts:
+  meaning: "Spectral/phase patterns consistent with synthetic speech generation."
+  caveats:
+    - "Aggressive noise reduction can create artifacts."
+image_freq_artifacts:
+  meaning: "Frequency-domain patterns sometimes associated with synthesis or heavy upsampling."
+  caveats:
+    - "Strong JPEG compression can introduce similar patterns."
