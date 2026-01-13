@@ -1,9 +1,9 @@
-﻿from src.traffic_light_mapper import map_traffic_light, Thresholds
+from src.traffic_light_mapper import map_traffic_light, Thresholds
 
 def test_artifact_density_does_not_force_outcome():
     """Governance invariant: artifact density may change uncertainty/quality, not outcome authority."""
     t = Thresholds()
-    risk = 0.42  # mid-range; outcome must not change based on artifact density
+    risk = 0.42  # mid-range, should remain Yellow regardless of artifact density
 
     low_q = 0.38   # sparse artifacts -> lower quality
     high_q = 0.72  # richer artifacts -> higher quality
